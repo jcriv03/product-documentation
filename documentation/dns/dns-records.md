@@ -145,6 +145,7 @@ In this case:
 - `IN` is the class that stands for "internet."
 - `TXT` is the record type.
 - `"v=spf1 -all"` is the actual SPF rule. v=spf1 indicates the SPF version being used, and -all means that no IP addresses are authorized to send an email for the domain. Any email that claims to be from this domain should be considered spoofed and can be safely rejected or marked as spam.
+- There is no need to include double quotes in the value of TXT records; the system automatically adds them for you. If you do add double quotes manually, they will be stripped out upon saving the record.
 
 <img src="https://assets.gcore.pro/docs/dns/dns-records/supported-dns-record-types/dns-records-70.png" alt="Example of adding a TXT record" width="80%">
 
